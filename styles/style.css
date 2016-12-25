@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Work+Sans);
+body {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #252839;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 70%;
+  border-top: 3px solid #3498db;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.clearable {
+  /*width: 130px;*/
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: black;
+  background: #fff right -10px center;
+  padding: 15px;
+}
+
+
+/* enable absolute positioning */
+
+.inner-addon {
+  position: relative;
+}
+
+
+/* style icon */
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  color: #252839;
+}
+
+.inner-addon .loader {
+  display: none;
+  position: absolute;
+  right: 9px;
+  top: 9px
+}
+
+
+/* align icon */
+
+.inner-addon .glyphicon.glyphicon-search {
+  left: 0px;
+}
+
+.inner-addon .glyphicon.glyphicon-remove {
+  display: none;
+  right: 0px;
+  cursor: pointer;
+}
+
+
+/* add padding  */
+
+.inner-addon input {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h1 {
+  font-family: 'Open Sans', serif;
+  font-weight: 600;
+  font-size: 50px;
+  /*line-height: 1.1;
+  margin: 0.5em 0;*/
+}
+
+p {
+  font-family: 'Roboto', serif;
+  /*line-height: 1.5;
+  margin: 0.5em 0;*/
+}
+
+a {
+  /*color:#4db8ff;*/
+  font-family: 'Open Sans', serif;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #f2b632;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.wrapper {
+  display: none;
+}
+
+.wrapper > h1 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-left: -2.5px;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+}
+
+.wrapper > p {  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  text-align: left;
+  text-indent: 50px;
+}
+
+.wrapper > a {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  letter-spacing: -.003em;
+}
